@@ -1,0 +1,37 @@
+site_name: AI and Health
+site_url: "https://pwenker.com/ai_and_health/"
+site_description: Resource collection and personal learning roadmap for AI in Healthcare.
+
+theme:
+  name: material
+  palette:
+    primary: green
+  icon:
+    repo: fontawesome/brands/github-alt
+
+repo_name: pwenker/ai_and_health
+repo_url: https://github.com/pwenker/ai_and_health
+
+extra:
+  social:
+  - icon: fontawesome/brands/github
+    link: "https://www.github.com/pwenker"
+  - icon: fontawesome/brands/twitter
+    link: "https://www.twitter.com/PascalWenker"
+  - icon: fontawesome/brands/linkedin
+    link: "https://www.linkedin.com/in/pascal-wenker/"
+  - icon: fontawesome/brands/youtube
+    link: "https://www.youtube.com/channel/UCYxDcdFLW-AMoHEfh7pG-oA"
+  disqus: "www-pwenker-com"
+
+markdown_extensions:
+    - toc:
+        permalink: true
+    - markdown.extensions.codehilite:
+        guess_lang: false
+    - admonition
+    - codehilite
+    - extra
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
