@@ -1,4 +1,4 @@
-![Thumbnail](https://github.com/pwenker/ai_and_health/blob/main/src/images/healthai.png?raw=true)
+![Thumbnail](https://github.com/pwenker/ai_and_health/blob/main/docs/images/healthai.png?raw=true)
 
 
 |  | AI & Health |
