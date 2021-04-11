@@ -2,6 +2,21 @@
 
 This collection contains websites, resources and tools that I use to support, automate and generally improve my research and literature reviews.
 
+Am I missing something? Feel free to open an issue and let me know :)
+
+
+
+## Mathpix Snip :book:
+
+**Link**: https://mathpix.com
+
+**Abstract**:
+
+Mathpix Snip digitizes handwritten or printed text, and copies outputs to the clipboard that can be pasted into LaTeX editors like Overleaf, Markdown editors like Typora, Microsoft Word, and more.
+
+**Relevance**:
+- Mathpix is a real time-saver if you spend a lot of time typing equations in LaTeX.
+
 
 
 ## Anki - powerful, intelligent flashcards :book:
@@ -14,7 +29,7 @@ This collection contains websites, resources and tools that I use to support, au
 - Anyone who needs to remember things in their daily life can benefit from Anki. Since it is content-agnostic and supports images, audio, videos and scientific markup (via LaTeX), the possibilities are endless.
 
 **Relevance**:
-- We loose what we don't use. Thanks to you, evolution.
+- We lose what we don't use. Thanks to you, evolution...
 - I use Anki whenever I want to remember facts and knowledge. In fact, what you find at https://pwenker.com/ai_and_health/knowledge also lives in an Anki collection and was exported from there.
 - Two things you should look up, if you don't know them: 1. Spaced Repetition 2. Retrieval Practice. You'll thank me later (if you don't forget).
 
@@ -99,6 +114,7 @@ Google Scholar provides a simple way to broadly search for scholarly literature.
 
 ## Bibliography
 
+<div class="csl-entry"><i>Mathpix Snip</i>. https://mathpix.com. Accessed 11 Apr. 2021.</div>
 <div class="csl-entry"><i>Anki - Powerful, Intelligent Flashcards</i>. https://apps.ankiweb.net/. Accessed 11 Apr. 2021.</div>
 <div class="csl-entry"><i>Anki - Powerful, Intelligent Flashcards</i>. https://apps.ankiweb.net/. Accessed 11 Apr. 2021.</div>
 <div class="csl-entry"><i>Zotero | Your Personal Research Assistant</i>. https://www.zotero.org/. Accessed 11 Apr. 2021.</div>

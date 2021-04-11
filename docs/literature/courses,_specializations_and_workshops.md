@@ -8,6 +8,19 @@ you can "audit" the courses for free if you are happy with only reading and view
 
 
 
+## Machine Learning for Healthcare (MIT 6.S897/HST.S53) :book:
+
+**Link**: https://mlhc17mit.github.io/
+
+**Abstract**:
+
+- Explores machine learning methods for clinical and healthcare applications. 
+- Covers concepts of algorithmic fairness, interpretability, and causality. 
+- Discusses application of time-series analysis, graphical models, deep learning and transfer learning methods to solving problems in healthcare. 
+- Considers how newly emerging machine learning techniques will shape healthcare policy and personalized medicine.
+
+
+
 ## AI in Healthcare (Coursera) :book:
 
 **Link**: https://www.coursera.org/specializations/ai-healthcare
@@ -42,6 +55,7 @@ Learn to build, evaluate, and integrate predictive models that have the power to
 
 ## Bibliography
 
+<div class="csl-entry"><i>Machine Learning for Healthcare (MIT 6.S897/HST.S53)</i>. https://mlhc17mit.github.io/.</div>
 <div class="csl-entry"><i>Learn to Utilize AI in Healthcare (Udacity)</i>. https://www.udacity.com/course/ai-for-healthcare-nanodegree--nd320. Accessed 11 Apr. 2021.</div>
 <div class="csl-entry">“AI in Healthcare (Coursera).” <i>Coursera</i>, https://www.coursera.org/specializations/ai-healthcare. Accessed 11 Apr. 2021.</div>
 <div class="csl-entry">“AI for Medicine (Coursera).” <i>Coursera</i>, https://www.coursera.org/specializations/ai-for-medicine. Accessed 5 Apr. 2021.</div>

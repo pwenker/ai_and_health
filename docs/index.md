@@ -26,7 +26,20 @@ I have **no medical training/education** and I am **not an expert in this resear
 ## Overview
 
 1. There is a [**literature and resources**](docs/literature/readme.md) subfolder organized by subcategories (programmatically created from a [`zotero`](https://www.zotero.org/) library) that contains relevant research papers and other resources along with metadata and a short description about their relevance.
-2. There is also a [**knowledge**](docs/knowledge/readme.md) folder containing notes and summaries of papers that I have read more thorougly (e.g. because they contain foundational knowledge). 
+2. There is also a [**knowledge**](docs/knowledge/readme.md) folder containing notes and summaries of papers that I have read more thoroughly (e.g. because they contain foundational knowledge). 
+
+## How to Contribute
+
+- Most of the content you see here is programmatically exported from somewhere else. So please don't try to create a pull request, but instead open an issue and tell me there what you want to have added or changed! I'm happy to hear about important resources, tools, or research papers that I have missed so far!
+- Don't hesitate to share any (constructive) criticism! I love to learn and would be glad If I could use your feedback to improve the quality of this resource collection!
+
+## How to Support
+
+If this project provides some value to you, I'd be happy if you do any of the following:
+
+- Contribute to this project (see above).
+- Share this project with anyone who might find it useful as well.
+- Pay it forward: do something good for someone else. If you need some ideas, take a look at [GiveWell](https://www.givewell.org/). 
 ## Table of Contents
 
 ### Literature & Resources
@@ -36,6 +49,11 @@ I have **no medical training/education** and I am **not an expert in this resear
       * [Bibliography](literature/ai_health.md#bibliography)
 
    * [Breast Cancer Detection](literature/breast_cancer_detection.md#breast-cancer-detection)
+      * [A novel deep learning based framework for the detection and classification of breast cancer using transfer learning (July 1, 2019) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/breast_cancer_detection.md#a-novel-deep-learning-based-framework-for-the-detection-and-classification-of-breast-cancer-using-transfer-learning-july-1-2019-book)
+      * [The benefits and harms of breast cancer screening: an independent review (2013-06) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/breast_cancer_detection.md#the-benefits-and-harms-of-breast-cancer-screening-an-independent-review-2013-06-book)
+      * [European guidelines for quality assurance in breast cancer screening and diagnosis (2013) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/breast_cancer_detection.md#european-guidelines-for-quality-assurance-in-breast-cancer-screening-and-diagnosis-2013-book)
+      * [Artificial intelligence for breast cancer detection in mammography and digital breast tomosynthesis: State of the art (June 9, 2020) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/breast_cancer_detection.md#artificial-intelligence-for-breast-cancer-detection-in-mammography-and-digital-breast-tomosynthesis-state-of-the-art-june-9-2020-book)
+      * [Artificial Intelligence: A Primer for Breast Imaging Radiologists (August 10, 2020) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/breast_cancer_detection.md#artificial-intelligence-a-primer-for-breast-imaging-radiologists-august-10-2020-book)
       * [Breast cancer incidence and mortality before and after implementation of the German mammography screening program (2020-08-01) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/breast_cancer_detection.md#breast-cancer-incidence-and-mortality-before-and-after-implementation-of-the-german-mammography-screening-program-2020-08-01-book)
       * [Deep learning in breast radiology: current progress and future directions (2021-01-15) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/breast_cancer_detection.md#deep-learning-in-breast-radiology-current-progress-and-future-directions-2021-01-15-book)
       * [Deep Neural Networks Improve Radiologists’ Performance in Breast Cancer Screening (2019-03-19) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/breast_cancer_detection.md#deep-neural-networks-improve-radiologists-performance-in-breast-cancer-screening-2019-03-19-book)
@@ -45,6 +63,7 @@ I have **no medical training/education** and I am **not an expert in this resear
       * [Bibliography](literature/breast_cancer_detection.md#bibliography)
 
    * [Courses, Specializations and Workshops](literature/courses,_specializations_and_workshops.md#courses-specializations-and-workshops)
+      * [Machine Learning for Healthcare (MIT 6.S897/HST.S53) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#machine-learning-for-healthcare-mit-6s897hsts53-book)
       * [AI in Healthcare (Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-in-healthcare-coursera-book)
       * [AI for Medicine (Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-for-medicine-coursera-book)
       * [Learn to Utilize AI in Healthcare (Udacity) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#learn-to-utilize-ai-in-healthcare-udacity-book)
@@ -65,6 +84,7 @@ I have **no medical training/education** and I am **not an expert in this resear
       * [Bibliography](literature/electrocardiography.md#bibliography)
 
    * [General Research Resources](literature/general_research_resources.md#general-research-resources)
+      * [Mathpix Snip <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#mathpix-snip-book)
       * [Anki - powerful, intelligent flashcards <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#anki---powerful-intelligent-flashcards-book)
       * [Zotero | Your personal research assistant <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#zotero--your-personal-research-assistant-book)
       * [Connected Papers | Find and explore academic papers <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#connected-papers--find-and-explore-academic-papers-book)

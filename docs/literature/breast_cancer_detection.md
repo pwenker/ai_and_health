@@ -5,6 +5,84 @@
 - A number of screening tests have been employed, including clinical and self breast exams, mammography, genetic screening, ultrasound, and magnetic resonance imaging.
 (source: [wikipedia/breast_cancer_screening](https://en.wikipedia.org/wiki/Breast_cancer_screening))
 
+**Relevance**:
+- What makes breast cancer screening a particularly crucial field of study is the combination of breast cancer being comparably 
+1. Very prevalent (most common cancer and cancer related cause of death in women)
+2. Very curable if detected early enough
+- Further, in some countries, e.g. Germany, population-based screening programmes with invitation system exist, which leads to large demands and opportunities for AI-assisted diagnosis and decision support.
+
+
+
+## A novel deep learning based framework for the detection and classification of breast cancer using transfer learning (July 1, 2019) :book:
+(_SanaUllah Khan, Naveed Islam, Zahoor Jan, Ikram Ud Din, Joel J. P. C Rodrigues_)
+
+**Link**: https://www.sciencedirect.com/science/article/pii/S0167865519301059
+
+**Abstract**:
+
+- In this article, the authors proposed a novel deep learning framework for the detection and classification of breast cancer in breast cytology images using the concept of transfer learning. 
+- In general, deep learning architectures are modeled to be problem specific and is performed in isolation. Contrary to classical learning paradigms, which develop and yield in isolation, transfer learning is aimed to utilize the gained knowledge during the solution of one problem into another related problem. 
+- In the proposed framework, features from images are extracted using pre-trained CNN architectures, namely, GoogLeNet, Visual Geometry Group Network (VGGNet) and Residual Networks (ResNet), which are fed into a fully connected layer for classification of malignant and benign cells using average pooling classification. 
+- To evaluate the performance of the proposed framework, experiments are performed on standard benchmark data sets. 
+- It has been observed that the proposed framework outclass all the other deep learning architectures in terms of accuracy in detection and classification of breast tumor in cytology images.
+
+**Highlights**:
+- A deep learning-based framework is proposed for the classification of breast cancer in breast cytology images.
+- Three different deep learning architectures (GoogLeNet, VGGNet, and ResNet) have been analysed.
+- The proposed framework gives a high level of accuracy in the classification of breast cancer.
+
+
+
+## The benefits and harms of breast cancer screening: an independent review (2013-06) :book:
+(_M. G. Marmot, D. G. Altman, D. A. Cameron, J. A. Dewar, S. G. Thompson, M. Wilcox_)
+
+**Link**: https://www.nature.com/articles/bjc2013177
+
+**Abstract**:
+
+- The breast cancer screening programmes in the United Kingdom currently invite women aged 50–70 years for screening mammography every 3 years. Since the time the screening programmes were established, there has been debate, at times sharply polarised, over the magnitude of their benefit and harm, and the balance between them. The expected major benefit is reduction in mortality from breast cancer. The major harm is overdiagnosis and its consequences; overdiagnosis refers to the detection of cancers on screening, which would not have become clinically apparent in the woman’s lifetime in the absence of screening.
+- Professor Sir Mike Richards, National Cancer Director, England, and Dr Harpal Kumar, Chief Executive Officer of Cancer Research UK, asked Professor Sir Michael Marmot to convene and chair an independent panel to review the evidence on benefits and harms of breast screening in the context of the UK breast screening programmes. The panel, authors of this report, reviewed the extensive literature and heard testimony from experts in the field who were the main contributors to the debate.
+
+
+
+## European guidelines for quality assurance in breast cancer screening and diagnosis (2013) :book:
+(_I. Amendoeira, Et Al, N. Perry, M. Broeders, C. de Wolf, S. Törnberg, R. Holland, L. von Karsa_)
+
+**Link**: http://bookshop.europa.eu/de/european-guidelines-for-quality-assurance-in-breast-cancer-screening-and-diagnosis-pbND0213386/
+
+**Abstract**:
+
+- The fourth edition of the European guidelines for quality assurance in breast cancer screening and diagnosis was published by the European Commission in 2006. 
+- The present supplements to the fourth edition have been produced by the same groups of experts originally established under the Europe Against Cancer programme that have developed and updated the guidelines since the early 1990s. 
+- Over the years, the scope and the depth of the multidisciplinary guidelines have expanded, and recommendations and protocols have been updated to keep pace with developments in the field. 
+- The present supplements lay a cornerstone for a new, completely revised fifth edition of the guidelines
+
+
+
+## Artificial intelligence for breast cancer detection in mammography and digital breast tomosynthesis: State of the art (June 9, 2020) :book:
+(_Ioannis Sechopoulos, Jonas Teuwen, Ritse Mann_)
+
+**Link**: https://www.sciencedirect.com/science/article/pii/S1044579X20301358
+
+**Abstract**:
+
+- The aim of this review is to provide an overview of the basic concepts and developments in the field AI for breast cancer detection in digital mammography and digital breast tomosynthesis. 
+- The pitfalls of conventional methods, and how these are, for the most part, avoided by this new technology, will be discussed. 
+- Importantly, studies that have evaluated the current capabilities of AI and proposals for how these capabilities should be leveraged in the clinical realm will be reviewed, while the questions that need to be answered before this vision becomes a reality are posed.
+
+
+
+## Artificial Intelligence: A Primer for Breast Imaging Radiologists (August 10, 2020) :book:
+(_Manisha Bahl_)
+
+**Link**: https://doi.org/10.1093/jbi/wbaa033
+
+**Abstract**:
+
+- Advances in AI technologies have led to techniques that could increase breast cancer detection, improve clinical efficiency in breast imaging practices, and guide decision-making regarding screening and prevention strategies. 
+- This article reviews key terminology and concepts, discusses common AI models and methods to validate and evaluate these models, describes emerging AI applications in breast imaging, and outlines challenges and future directions. 
+- Familiarity with AI terminology, concepts, methods, and applications is essential for breast imaging radiologists to critically evaluate these emerging technologies, recognize their strengths and limitations, and ultimately ensure optimal patient care.
+
 
 
 ## Breast cancer incidence and mortality before and after implementation of the German mammography screening program (2020-08-01) :book:
@@ -94,6 +172,15 @@ enabling earlier therapy for more treatable disease
 
 ## Bibliography
 
+<div class="csl-entry"><i>ScienceDirect Snapshot</i>. https://www.sciencedirect.com/science/article/abs/pii/S0167865519301059. Accessed 11 Apr. 2021.</div>
+<div class="csl-entry">Khan, SanaUllah, et al. “A Novel Deep Learning Based Framework for the Detection and Classification of Breast Cancer Using Transfer Learning.” <i>Pattern Recognition Letters</i>, vol. 125, July 2019, pp. 1–6, doi:10.1016/j.patrec.2019.03.022.</div>
+<div class="csl-entry"><i>Full Text PDF</i>. https://www.nature.com/articles/bjc2013177.pdf. Accessed 11 Apr. 2021.</div>
+<div class="csl-entry">Marmot, M. G., et al. “The Benefits and Harms of Breast Cancer Screening: An Independent Review.” <i>British Journal of Cancer</i>, vol. 108, no. 11, June 2013, pp. 2205–40, doi:10.1038/bjc.2013.177.</div>
+<div class="csl-entry"><i>Full Text PDF</i>. https://www.zora.uzh.ch/id/eprint/84270/1/Amendoeira_EU_2013.pdf. Accessed 11 Apr. 2021.</div>
+<div class="csl-entry">Amendoeira, I., and Et Al. “European Guidelines for Quality Assurance in Breast Cancer Screening and Diagnosis.” <i>European Guidelines for Quality Assurance in Breast Cancer Screening and Diagnosis</i>, edited by N. Perry et al., 2013, pp. 1–160, doi:10.2772/13196.</div>
+<div class="csl-entry"><i>ScienceDirect Snapshot</i>. https://www.sciencedirect.com/science/article/pii/S1044579X20301358. Accessed 11 Apr. 2021.</div>
+<div class="csl-entry">Sechopoulos, Ioannis, et al. “Artificial Intelligence for Breast Cancer Detection in Mammography and Digital Breast Tomosynthesis: State of the Art.” <i>Seminars in Cancer Biology</i>, June 2020, doi:10.1016/j.semcancer.2020.06.002.</div>
+<div class="csl-entry">Bahl, Manisha. “Artificial Intelligence: A Primer for Breast Imaging Radiologists.” <i>Journal of Breast Imaging</i>, vol. 2, no. 4, Aug. 2020, pp. 304–14, doi:10.1093/jbi/wbaa033.</div>
 <div class="csl-entry">Ou, William C., et al. “Deep Learning in Breast Radiology: Current Progress and Future Directions.” <i>European Radiology</i>, Jan. 2021, doi:10.1007/s00330-020-07640-9.</div>
 <div class="csl-entry"><i>PubMed Entry</i>. http://www.ncbi.nlm.nih.gov/pubmed/33449174. Accessed 28 Mar. 2021.</div>
 <div class="csl-entry"><i>Submitted Version</i>. https://www.repository.cam.ac.uk/bitstream/1810/299195/1/final_submission_Nature.pdf. Accessed 28 Mar. 2021.</div>

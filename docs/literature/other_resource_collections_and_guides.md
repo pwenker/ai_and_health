@@ -2,6 +2,10 @@
 
 This collection contains other resource collections and guides.
 
+- Maybe some of the other collections provide what you were originally trying to find in here, or they give you a different perspective or layout that you prefer.
+- Perhaps you can just use them as additional information. Heck, you even might to create your own collection!
+- In any case, I believe the inclusion of alternative collections will benefit at least some of you.
+
 
 
 ## isaacmg/healthcare_ml :book:
