@@ -16,7 +16,9 @@
       * [Bibliography](literature/breast_cancer_detection.md#bibliography)
 
    * [Courses, Specializations and Workshops](literature/courses,_specializations_and_workshops.md#courses-specializations-and-workshops)
-      * [AI for Medicine <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-for-medicine-book)
+      * [AI in Healthcare (Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-in-healthcare-coursera-book)
+      * [AI for Medicine (Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-for-medicine-coursera-book)
+      * [Learn to Utilize AI in Healthcare (Udacity) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#learn-to-utilize-ai-in-healthcare-udacity-book)
       * [Bibliography](literature/courses,_specializations_and_workshops.md#bibliography)
 
    * [Covid-19 Diagnosis](literature/covid-19_diagnosis.md#covid-19-diagnosis)
@@ -32,6 +34,15 @@
 
    * [Electrocardiography](literature/electrocardiography.md#electrocardiography)
       * [Bibliography](literature/electrocardiography.md#bibliography)
+
+   * [General Research Resources](literature/general_research_resources.md#general-research-resources)
+      * [Anki - powerful, intelligent flashcards <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#anki---powerful-intelligent-flashcards-book)
+      * [Zotero | Your personal research assistant <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#zotero--your-personal-research-assistant-book)
+      * [Connected Papers | Find and explore academic papers <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#connected-papers--find-and-explore-academic-papers-book)
+      * [ShortScience.org - Making Science Accessible! <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#shortscienceorg---making-science-accessible-book)
+      * [Papers with Code - The latest in Machine Learning <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#papers-with-code---the-latest-in-machine-learning-book)
+      * [Google Scholar <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/general_research_resources.md#google-scholar-book)
+      * [Bibliography](literature/general_research_resources.md#bibliography)
 
    * [Medical Diagnosis](literature/medical_diagnosis.md#medical-diagnosis)
       * [Bibliography](literature/medical_diagnosis.md#bibliography)
