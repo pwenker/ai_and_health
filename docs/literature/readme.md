@@ -76,6 +76,10 @@
       * [Limitations](readme.md#limitations)
       * [Table of Contents](readme.md#table-of-contents)
 
+      * [HealthCatalyst/healthcareai-r <g-emoji class="g-emoji" alias="computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png">💻</g-emoji>](software_and_code.md#healthcatalysthealthcareai-r-computer)
+      * [Project-MONAI/MONAI <g-emoji class="g-emoji" alias="computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png">💻</g-emoji>](software_and_code.md#project-monaimonai-computer)
+      * [Bibliography](software_and_code.md#bibliography)
+
    * [Surveys, Reviews, and Foundations](surveys,_reviews,_and_foundations.md#surveys-reviews-and-foundations)
       * [Big Data and Machine Learning in Health Care (April 3, 2018) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](surveys,_reviews,_and_foundations.md#big-data-and-machine-learning-in-health-care-april-3-2018-book)
       * [A Review of Challenges and Opportunities in Machine Learning for Health (2020-5-30) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](surveys,_reviews,_and_foundations.md#a-review-of-challenges-and-opportunities-in-machine-learning-for-health-2020-5-30-book)

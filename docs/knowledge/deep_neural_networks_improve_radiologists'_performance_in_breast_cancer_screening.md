@@ -9,6 +9,58 @@
 
 #### Breast Cancer
 
+### Q: What is the patch-level model and why do the authors introduce it?
+
+**Answer**:
+
+-   The high resolution of the images and the limited memory of modern
+    GPUs constrain the authors to use relatively shallow ResNets within
+    their model when using full-resolution images as inputs.
+-   To further take advantage of the fine-grained detail in mammograms,
+    they trained an auxiliary model to classify 256 × 256-pixel patches
+    of mammograms, predicting two labels: the presence or absence of
+    malignant and benign findings in a given patch.
+-   The labels for these patches are produced based on the pixel-level
+    segmentations of the corresponding mammograms produced by
+    clinicians.
+-   This approach allows to use a very deep auxiliary network at the
+    patch level, as this network does not have to process the entire
+    high-resolution image at once.
+-   Adding the heatmaps produced by the patch-level classifier as
+    additional input channels allows the main classifier to get the
+    benefit from pixel-level labels, while the heavy computation
+    necessary to produce the pixel-level predictions does not need to be
+    repeated each time an example is used for learning.
+
+***Remarks***: The authors refer to this model as a *patch-level model*,
+in contrast to the *breast-level model* which operates on images of the
+whole breast.\
+
+
+### Q: How did the authors evaluate their models?
+
+**Answer**:
+
+-   They evaluated their models primarily in terms of AUC (area under
+    the ROC curve) for malignant/not malignant and benign/not benign
+    classification tasks on the breast level.
+-   The model and readers' responses on the subset for reader study are
+    evaluated in terms of AUC as well as precision-recall AUC (PRAUC),
+    which are commonly used metrics in evaluation of radiologists'
+    performance.
+
+***Remarks***:
+
+-   ROC and PRAUC capture diferent aspects of performance of a
+    predictive model.
+-   The ROC curve summarizes the tradeof between the true positive rate
+    and false positive rate for a model using diferent probability
+    thresholds.
+-   The precision-recall curve summarizes the trade-of between the true
+    positive rate (recall) and the positive predictive value (precision)
+    for a model using diferent probability thresholds.
+
+
 ### Q: What are the contributions of the paper?
 
 **Answer**: 1) 
@@ -147,57 +199,5 @@
 ***Remarks***: ResNet-22 refers to our version of a 22-layer ResNet,
 with additional modifications such as a larger kernel in the first
 convolutional layer.
-
-
-### Q: What is the patch-level model and why do the authors introduce it?
-
-**Answer**:
-
--   The high resolution of the images and the limited memory of modern
-    GPUs constrain the authors to use relatively shallow ResNets within
-    their model when using full-resolution images as inputs.
--   To further take advantage of the fine-grained detail in mammograms,
-    they trained an auxiliary model to classify 256 × 256-pixel patches
-    of mammograms, predicting two labels: the presence or absence of
-    malignant and benign findings in a given patch.
--   The labels for these patches are produced based on the pixel-level
-    segmentations of the corresponding mammograms produced by
-    clinicians.
--   This approach allows to use a very deep auxiliary network at the
-    patch level, as this network does not have to process the entire
-    high-resolution image at once.
--   Adding the heatmaps produced by the patch-level classifier as
-    additional input channels allows the main classifier to get the
-    benefit from pixel-level labels, while the heavy computation
-    necessary to produce the pixel-level predictions does not need to be
-    repeated each time an example is used for learning.
-
-***Remarks***: The authors refer to this model as a *patch-level model*,
-in contrast to the *breast-level model* which operates on images of the
-whole breast.\
-
-
-### Q: How did the authors evaluate their models?
-
-**Answer**:
-
--   They evaluated their models primarily in terms of AUC (area under
-    the ROC curve) for malignant/not malignant and benign/not benign
-    classification tasks on the breast level.
--   The model and readers' responses on the subset for reader study are
-    evaluated in terms of AUC as well as precision-recall AUC (PRAUC),
-    which are commonly used metrics in evaluation of radiologists'
-    performance.
-
-***Remarks***:
-
--   ROC and PRAUC capture diferent aspects of performance of a
-    predictive model.
--   The ROC curve summarizes the tradeof between the true positive rate
-    and false positive rate for a model using diferent probability
-    thresholds.
--   The precision-recall curve summarizes the trade-of between the true
-    positive rate (recall) and the positive predictive value (precision)
-    for a model using diferent probability thresholds.
 
 
