@@ -1,6 +1,7 @@
 site_name: AI and Health
 site_url: "https://pwenker.com/ai_and_health/"
 site_description: Resource collection and personal learning roadmap for AI in Healthcare.
+use_directory_urls: false
 
 theme:
   name: material
