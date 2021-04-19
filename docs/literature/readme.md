@@ -76,6 +76,7 @@
       * [Limitations](readme.md#limitations)
       * [Table of Contents](readme.md#table-of-contents)
 
+   * [Software and Code](software_and_code.md#software-and-code)
       * [HealthCatalyst/healthcareai-r <g-emoji class="g-emoji" alias="computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png">💻</g-emoji>](software_and_code.md#healthcatalysthealthcareai-r-computer)
       * [Project-MONAI/MONAI <g-emoji class="g-emoji" alias="computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png">💻</g-emoji>](software_and_code.md#project-monaimonai-computer)
       * [Bibliography](software_and_code.md#bibliography)
