@@ -21,9 +21,14 @@
       * [Bibliography](literature/breast_cancer_detection.md#bibliography)
 
    * [Courses, Specializations and Workshops](literature/courses,_specializations_and_workshops.md#courses-specializations-and-workshops)
+      * [AI for Medicine (offered by deeplearning.ai via Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-for-medicine-offered-by-deeplearningai-via-coursera-book)
+      * [Evaluations of AI Applications in Healthcare (offered by Stanford via Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#evaluations-of-ai-applications-in-healthcare-offered-by-stanford-via-coursera-book)
+      * [AI in Healthcare Capstone (offered by Stanford via Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-in-healthcare-capstone-offered-by-stanford-via-coursera-book)
+      * [Introduction to Clinical Data (offered by Stanford via Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#introduction-to-clinical-data-offered-by-stanford-via-coursera-book)
+      * [Fundamentals of Machine Learning for Healthcare (offered by Stanford via Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#fundamentals-of-machine-learning-for-healthcare-offered-by-stanford-via-coursera-book)
+      * [AI in Healthcare Specialization (offered by Stanford via Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-in-healthcare-specialization-offered-by-stanford-via-coursera-book)
+      * [Introduction to Healthcare (offered by Stanford via Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#introduction-to-healthcare-offered-by-stanford-via-coursera-book)
       * [Machine Learning for Healthcare (MIT 6.S897/HST.S53) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#machine-learning-for-healthcare-mit-6s897hsts53-book)
-      * [AI in Healthcare (Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-in-healthcare-coursera-book)
-      * [AI for Medicine (Coursera) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#ai-for-medicine-coursera-book)
       * [Learn to Utilize AI in Healthcare (Udacity) <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>](literature/courses,_specializations_and_workshops.md#learn-to-utilize-ai-in-healthcare-udacity-book)
       * [Bibliography](literature/courses,_specializations_and_workshops.md#bibliography)
 
@@ -75,13 +80,15 @@
 ### Knowledge
 
 
-   * [AI in Healthcare Specialization (Coursera)](knowledge/ai_in_healthcare_specialization_(coursera).md#ai-in-healthcare-specialization-coursera)
-      * [Ai In Healthcare](knowledge/ai_in_healthcare_specialization_(coursera).md#ai-in-healthcare)
-         * [Introduction To Healthcare](knowledge/ai_in_healthcare_specialization_(coursera).md#introduction-to-healthcare)
-            * [Module 1](knowledge/ai_in_healthcare_specialization_(coursera).md#module-1)
-               * [Overview And Key Challenges](knowledge/ai_in_healthcare_specialization_(coursera).md#overview-and-key-challenges)
-            * [Module 2](knowledge/ai_in_healthcare_specialization_(coursera).md#module-2)
-               * [Physician Practices And Physician Payments](knowledge/ai_in_healthcare_specialization_(coursera).md#physician-practices-and-physician-payments)
+   * [AI in Healthcare Specialization - Introduction to Healthcare](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#ai-in-healthcare-specialization---introduction-to-healthcare)
+      * [Ai In Healthcare](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#ai-in-healthcare)
+         * [Introduction To Healthcare](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#introduction-to-healthcare)
+            * [Module 1](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#module-1)
+               * [Overview And Key Challenges](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#overview-and-key-challenges)
+            * [Module 2](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#module-2)
+               * [Physician Practices And Physician Payments](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#physician-practices-and-physician-payments)
+            * [Module 3](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#module-3)
+               * [Hospitals And Payment Systems](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#hospitals-and-payment-systems)
 
    * [A Review of Challenges and Opportunities in Machine Learning for Health](knowledge/a_review_of_challenges_and_opportunities_in_machine_learning_for_health.md#a-review-of-challenges-and-opportunities-in-machine-learning-for-health)
       * [Artificial Intelligence](knowledge/a_review_of_challenges_and_opportunities_in_machine_learning_for_health.md#artificial-intelligence)

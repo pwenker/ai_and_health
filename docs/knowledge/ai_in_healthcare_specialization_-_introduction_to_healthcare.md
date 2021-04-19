@@ -1,4 +1,4 @@
-# AI in Healthcare Specialization (Coursera)
+# AI in Healthcare Specialization - Introduction to Healthcare
 
 
 ## Ai In Healthcare
@@ -139,6 +139,106 @@
 </details></p>
 
 <p><details><summary>Q: What is <b>Medicare</b>?</summary><b>Answer</b>: It is the US government payer that provides coverage for people mainly over the age of 65.<br>
+
+</details></p>
+
+
+#### Module 3
+
+
+##### Hospitals And Payment Systems
+
+<p><details><summary>Q: What are <b>hospitals</b>?</summary><b>Answer</b>: They are organizations that provide facilities and staff to offer medical care.
+
+<b><i>Remarks</i></b>: They can operate as
+private businesses, on a for-profit or a not-for-profit basis, and some hospitals are owned or operated by governmet organizations.
+
+</details></p>
+
+<p><details><summary>Q: What is a defining characteristic of a hospital?</summary><b>Answer</b>: The provision of beds and infrastructure for inpatient care.
+
+</details></p>
+
+<p><details><summary>Q: What are the two kinds of relationships between hospitals and physicians?</summary><b>Answer</b>: <ol><li>Hospitals may employ physicians directly</li><li>A physician may have an arrangement to practice at the hospital, but still have a separate practice.</li></ol>
+
+</details></p>
+
+<p><details><summary>Q: What are <b>admitting privileges</b>?</summary><b>Answer</b>: These are arrangements for physicians to provide services at a hospital.
+
+<b><i>Remarks</i></b>: In this case, physician practice and hospital are still separate businesses and probably paid separately.
+
+</details></p>
+
+<p><details><summary>Q: What is a <b>hospital network</b>?</summary><b>Answer</b>: It is a group of hospitals with whom an insurer works, and which enrollees are required or encouraged to use.
+
+</details></p>
+
+<p><details><summary>Q: What is a <b>chargemaster </b>of a hospital?</summary><b>Answer</b>: It is a list of all the services that a hospital provides, and the amount that the hospital charges for each service.
+
+</details></p>
+
+<p><details><summary>Q: How does <b>per diem</b> payment work?</summary><b>Answer</b>: In a <b>per diem</b> payment system intermediaries pay a fixed amount to the hospital for each patient per day.
+
+<b><i>Remarks</i></b>: This payment is a prospective payment since it does not regard the actual hospital's charges incurred for the provided services.
+
+</details></p>
+
+<p><details><summary>Q: What are <b>Diagnosis-Related Groups</b> (<b>DRG</b>)?</summary><b>Answer</b>: It is a payment system where hospitals are paid a flat amount for each patient's hospital stay based on the given diagnosis.
+
+</details></p>
+
+<p><details><summary>Q: What is the&nbsp;<b>global budget model</b>?</summary><b>Answer</b>: It is a payment system for inpatient care, where hospital is paid a fixed amount for a period of time (often a year).
+
+</details></p>
+
+<p><details><summary>Q: Which are the four payment systems for hospitals?</summary><b>Answer</b>: <ol><li>Fee for service</li><li>Per diem</li><li>Diagnosis-related group</li><li>Global budget</li></ol>
+
+</details></p>
+
+<p><details><summary>Q: How can FFS, Per diem, DRG and Global budget systems be arranged according to the incentives they create?</summary><b>Answer</b>: They can be arranged according to the incentive they create to provide care from <i>most </i>care to <i>least</i> care in the following way:<br><ol><li>Fee for service</li><li>Per diem</li><li>Diagnosis-related group</li><li>Global budget</li></ol>
+
+<b><i>Remarks</i></b>: More care can lead to overuse, less care can lead to underuse!
+
+</details></p>
+
+<p><details><summary>Q: How can FFS, Per diem, DRG and Global budget systems be arranged according to the amount of risk transferred from intermediaries to hospitals?</summary><b>Answer</b>: They can be arranged from less risk to most risk transferred according to:<br><ol><li>Fee for service</li><li>Per diem</li><li>Diagnosis-related group</li><li>Global budget</li></ol>
+
+</details></p>
+
+<p><details><summary>Q: What are <b>hospital systems</b>?</summary><b>Answer</b>: These are larger large organizations consisting of many hospitals that are part of the same company.
+
+</details></p>
+
+<p><details><summary>Q: What are <b>physician-hospital organizations</b> (<b>PHO</b>'s)?</summary><b>Answer</b>: These are larger organizations consisting of many hospitals that are part of the same company.
+
+</details></p>
+
+<p><details><summary>Q: How do we call large PHO's with a broader representation of physicians?</summary><b>Answer</b>: We then apply the term: <b>integrated delivery network</b> (<b>IDN</b>).
+
+</details></p>
+
+<p><details><summary>Q: What is an <b>integrated delivery network</b> (<b>IDN</b>)?</summary><b>Answer</b>: It is an entity that owns, or closely integrates, many providers of different types to provide a broad range of care.
+
+</details></p>
+
+<p><details><summary>Q: What is an&nbsp;<b>Accountable Care Organization</b>&nbsp;(<b>ACO</b>)?</summary><b>Answer</b>: It is an organization that works to create <i>clinical integration (</i>providers work together to seliver integrated and coordinated patient care<i>)&nbsp;</i>across many providers.<br>
+
+<b><i>Remarks</i></b>: Here, each provider or organization can voluntarily associate with the ACO, have some contractual arrangements, but stay in their own separate
+organization.
+
+</details></p>
+
+<p><details><summary>Q: What is <b>pay-for-performance</b> (<b>P4P</b>)?</summary><b>Answer</b>: It is the use of financial incentives or penalties based on whether or not a provider meets some set of performance expectations (focused on the quality of care).
+
+</details></p>
+
+<p><details><summary>Q: What is an <b>electrical medical record</b> (<b>EMR</b>)?</summary><b>Answer</b>: It is a digitized version of a patient's medical record.
+
+</details></p>
+
+<p><details><summary>Q: What is a <b>personal health record</b> (<b>PHR</b>)?</summary><b>Answer</b>: It commonly refers to an electronic application for patients to record their own personal health information.
+
+<b><i>Remarks</i></b>: This may be for the patients' own use or to share with their healthcare providers.
 
 </details></p>
 
