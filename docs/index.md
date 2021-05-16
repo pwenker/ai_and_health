@@ -122,6 +122,8 @@ If this project provides some value to you, I'd be happy if you do any of the fo
 ### Knowledge
 
 
+
+
    * [AI in Healthcare Specialization - Introduction to Healthcare](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#ai-in-healthcare-specialization---introduction-to-healthcare)
       * [Ai In Healthcare](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#ai-in-healthcare)
          * [Introduction To Healthcare](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#introduction-to-healthcare)
@@ -131,6 +133,10 @@ If this project provides some value to you, I'd be happy if you do any of the fo
                * [Physician Practices And Physician Payments](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#physician-practices-and-physician-payments)
             * [Module 3](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#module-3)
                * [Hospitals And Payment Systems](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#hospitals-and-payment-systems)
+            * [Module 4](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#module-4)
+               * [Intermediaries And Health Care Financing](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#intermediaries-and-health-care-financing)
+            * [Module 5](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#module-5)
+               * [Healthcare Products And Prescription Drugs](knowledge/ai_in_healthcare_specialization_-_introduction_to_healthcare.md#healthcare-products-and-prescription-drugs)
 
    * [A Review of Challenges and Opportunities in Machine Learning for Health](knowledge/a_review_of_challenges_and_opportunities_in_machine_learning_for_health.md#a-review-of-challenges-and-opportunities-in-machine-learning-for-health)
       * [Artificial Intelligence](knowledge/a_review_of_challenges_and_opportunities_in_machine_learning_for_health.md#artificial-intelligence)

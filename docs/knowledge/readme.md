@@ -12,6 +12,8 @@ remember. Some parts I might have just missed, others I might have deliberately 
 ## Table of Contents
 
 
+
+
    * [AI in Healthcare Specialization - Introduction to Healthcare](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#ai-in-healthcare-specialization---introduction-to-healthcare)
       * [Ai In Healthcare](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#ai-in-healthcare)
          * [Introduction To Healthcare](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#introduction-to-healthcare)
@@ -21,6 +23,10 @@ remember. Some parts I might have just missed, others I might have deliberately 
                * [Physician Practices And Physician Payments](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#physician-practices-and-physician-payments)
             * [Module 3](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#module-3)
                * [Hospitals And Payment Systems](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#hospitals-and-payment-systems)
+            * [Module 4](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#module-4)
+               * [Intermediaries And Health Care Financing](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#intermediaries-and-health-care-financing)
+            * [Module 5](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#module-5)
+               * [Healthcare Products And Prescription Drugs](ai_in_healthcare_specialization_-_introduction_to_healthcare.md#healthcare-products-and-prescription-drugs)
 
    * [A Review of Challenges and Opportunities in Machine Learning for Health](a_review_of_challenges_and_opportunities_in_machine_learning_for_health.md#a-review-of-challenges-and-opportunities-in-machine-learning-for-health)
       * [Artificial Intelligence](a_review_of_challenges_and_opportunities_in_machine_learning_for_health.md#artificial-intelligence)
