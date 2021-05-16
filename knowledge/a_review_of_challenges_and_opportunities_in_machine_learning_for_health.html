@@ -1,0 +1,901 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resource collection and personal learning roadmap for AI in Healthcare.">
+      
+      
+      
+      
+        <link rel="canonical" href="https://pwenker.com/ai_and_health/knowledge/a_review_of_challenges_and_opportunities_in_machine_learning_for_health.html">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
+    
+    
+      
+        <title>A Review of Challenges and Opportunities in Machine Learning for Health - AI and Health</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a-review-of-challenges-and-opportunities-in-machine-learning-for-health" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AI and Health" class="md-header__button md-logo" aria-label="AI and Health" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI and Health
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              A Review of Challenges and Opportunities in Machine Learning for Health
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/pwenker/ai_and_health/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwenker/ai_and_health
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI and Health" class="md-nav__button md-logo" aria-label="AI and Health" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AI and Health
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/pwenker/ai_and_health/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwenker/ai_and_health
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Knowledge
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Knowledge" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Knowledge
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        README - Knowledge Folder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          A Review of Challenges and Opportunities in Machine Learning for Health
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="a_review_of_challenges_and_opportunities_in_machine_learning_for_health.html" class="md-nav__link md-nav__link--active">
+        A Review of Challenges and Opportunities in Machine Learning for Health
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#artificial-intelligence" class="md-nav__link">
+    Artificial Intelligence
+  </a>
+  
+    <nav class="md-nav" aria-label="Artificial Intelligence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#health" class="md-nav__link">
+    Health
+  </a>
+  
+    <nav class="md-nav" aria-label="Health">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai_in_healthcare_specialization_-_introduction_to_healthcare.html" class="md-nav__link">
+        AI in Healthcare Specialization - Introduction to Healthcare
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="breast_cancer_incidence_and_mortality_before_and_after_implementation_of_the_german_mammography_screening_program.html" class="md-nav__link">
+        Breast cancer incidence and mortality before and after implementation of the German mammography screening program
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="deep_neural_networks_improve_radiologists%27_performance_in_breast_cancer_screening.html" class="md-nav__link">
+        Deep Neural Networks Improve Radiologists' Performance in Breast Cancer Screening
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Literature
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Literature" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Literature
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/index.html" class="md-nav__link">
+        README - Literature & Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/ai_health.html" class="md-nav__link">
+        AI Health
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/breast_cancer_detection.html" class="md-nav__link">
+        Breast Cancer Detection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/courses%2C_specializations_and_workshops.html" class="md-nav__link">
+        Courses, Specializations and Workshops
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/covid-19_diagnosis.html" class="md-nav__link">
+        Covid-19 Diagnosis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/datasets.html" class="md-nav__link">
+        Datasets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/drug_discovery.html" class="md-nav__link">
+        Drug Discovery
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/electrocardiography.html" class="md-nav__link">
+        Electrocardiography
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/general_research_resources.html" class="md-nav__link">
+        General Research Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/medical_diagnosis.html" class="md-nav__link">
+        Medical Diagnosis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/medical_image_segmentation.html" class="md-nav__link">
+        Medical Image Segmentation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/other_resource_collections_and_guides.html" class="md-nav__link">
+        Other Resource Collections and Guides
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/software_and_code.html" class="md-nav__link">
+        Software and Code
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/surveys%2C_reviews%2C_and_foundations.html" class="md-nav__link">
+        Surveys, Reviews, and Foundations
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#artificial-intelligence" class="md-nav__link">
+    Artificial Intelligence
+  </a>
+  
+    <nav class="md-nav" aria-label="Artificial Intelligence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#health" class="md-nav__link">
+    Health
+  </a>
+  
+    <nav class="md-nav" aria-label="Health">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/pwenker/ai_and_health/edit/master/docs/knowledge/a_review_of_challenges_and_opportunities_in_machine_learning_for_health.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="a-review-of-challenges-and-opportunities-in-machine-learning-for-health">A Review of Challenges and Opportunities in Machine Learning for Health<a class="headerlink" href="#a-review-of-challenges-and-opportunities-in-machine-learning-for-health" title="Permanent link">&para;</a></h1>
+<h2 id="artificial-intelligence">Artificial Intelligence<a class="headerlink" href="#artificial-intelligence" title="Permanent link">&para;</a></h2>
+<h3 id="health">Health<a class="headerlink" href="#health" title="Permanent link">&para;</a></h3>
+<h4 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h4>
+<p><details><summary>Q: <p data-original-markdown="RGVzY3JpYmUgSW50ZXJuYWwgVmFsaWRpdHkgLSBTaGlmdCBvdmVyIHRpbWUgKE5vbi1zdGF0aW9uYXJpdHkgaW4gbGVhcm5pbmcgYW5kIGRlcGxveW1lbnQp">Describe the authors' "Google Flue Trends"-example about "Internal Validity - Shift over time" (Non-stationarity in learning and deployment)</p></summary><b>Answer</b>: <ul data-original-markdown="LSBJbiBhIG5vdGFibGUgZXhhbXBsZSBvZiBjb25jZXB0IGRyaWZ0LCBHb29nbGUgRmx1IFRyZW5kcyBwZXJzaXN0ZW50bHkgb3ZlcmVzdGltYXRlZCBmbHUgZHVlIHRvIHNoaWZ0cyBpbiBzZWFyY2ggYmVoYXZpb3JzODAuIDxiciAvPi0gVGhlIGluaXRpYWwgbW9kZWwgd2FzIGEgZ3JlYXQgc3VjY2VzcywgbGV2ZXJhZ2luZyBHb29nbGUgc2VhcmNoIGRhdGEgdG8gcHJlZGljdCBmbHUgaW5jaWRlbmNlOyBob3dldmVyLCB3aXRob3V0IHVwZGF0ZSB0aGUgbW9kZWwgYmVnYW4gdG8gb3ZlcmVzdGltYXRlIGZsdSBpbmNpZGVuY2UgaW4gc3Vic2VxdWVudCB5ZWFycyBhcyB1c2VyIHNlYXJjaCBiZWhhdmlvcnMgaGFkIHNoaWZ0ZWQuIDxiciAvPi0gV2hpbGUgdGhlIGRyaWZ0IHdhcyB1bmludGVudGlvbmFsLCB0aGUgZXhhbXBsZSBtb3RpdmF0ZXMgdGhlIG5lZWQgZm9yIG1vZGVscyB0aGF0IGNvbnRpbnVvdXNseSB1cGRhdGUu">
+<li>In a notable example of concept drift, Google Flu Trends persistently overestimated flu due to shifts in search behaviors. </li>
+<li>The initial model was a great success, leveraging Google search data to predict flu incidence.</li><li>However, without update the model began to overestimate flu incidence in subsequent years as user search behaviors had shifted. </li>
+<li>While the drift was unintentional, the example motivates the need for models that continuously update.</li>
+</ul>
+
+</details></p>
+
+<p><details><summary>Q: According to the authors, which are the three key factors to consider with outcome definitions?</summary><b>Answer</b>: <ol data-original-markdown="MS4gQ3JlYXRpbmcgcmVsaWFibGUgb3V0Y29tZXMsIDxiciAvPjIuIFVuZGVyc3RhbmRpbmcgdGhlIHJlbGV2YW5jZSBvZiBhbiBvdXRjb21lIGNsaW5pY2FsbHksIGFuZCA8YnIgLz4zLiBUaGUgc3VidGxldHkgb2YgbGFiZWwgbGVha2FnZS4=">
+<li>Creating reliable outcomes, </li>
+<li>Understanding the relevance of an outcome clinically, and </li>
+<li>The subtlety of label leakage.</li>
+</ol>
+
+</details></p>
+
+<p><details><summary>Q: <p data-original-markdown="UHJvdmlkZSBhbiBleGFtcGxlIG9mIHRoZSBTaW1wc29uJ3MgcGFyYWRveCBmb3IgYXN0aG1hdGljIHBhdGllbnRzLg==">Provide the authors' example of the Simpson's paradox (asthmatic patients admitted to the hospital for pneumonia).</p></summary><b>Answer</b>: <ul data-original-markdown="LSBGb3IgaW5zdGFuY2UsIFNpbXBzb27igJlzIHBhcmFkb3ggZGVzY3JpYmVzIHRoZSBvYnNlcnZhdGlvbiB0aGF0IHRoZSByZWxhdGlvbnNoaXAgYmV0d2VlbiB0d28gdmFyaWFibGVzIGNhbiBjaGFuZ2UgZGlyZWN0aW9ucyBpZiBtb3JlIGluZm9ybWF0aW9uIGlzIGluY2x1ZGVkIGluIHRoZSBtb2RlbDEyLiA8YnIgLz4tIFRvIGJldHRlciB1bmRlcnN0YW5kIHRoaXMgaXNzdWUsIGNvbnNpZGVyIHByaW9yIHdvcmsgaW4gd2hpY2ggcmVzZWFyY2hlcnMgZm91bmQgdGhhdCBhc3RobWF0aWMgcGF0aWVudHMgd2hvIHdlcmUgYWRtaXR0ZWQgdG8gdGhlIGhvc3BpdGFsIGZvciBwbmV1bW9uaWEgd2VyZSBtb3JlIGFnZ3Jlc3NpdmVseSB0cmVhdGVkIGZvciB0aGUgaW5mZWN0aW9uLCBsb3dlcmluZyB0aGUgc3VicG9wdWxhdGlvbiBtb3J0YWxpdHkgcmF0ZS4gPGJyIC8+LSBBIG1vZGVsIHRoYXQgcHJlZGljdHMgZGVhdGggZnJvbSBhc3RobWEgd2lsbCBsZWFybiB0aGF0IGFzdGhtYSBpcyBwcm90ZWN0aXZlLiA8YnIgLz4tIElmLCBob3dldmVyLCBhbiBhZGRpdGlvbmFsIHZhcmlhYmxlIHRvIGFjY291bnQgZm9yIHRoZSBsZXZlbCBvZiBjYXJlIGlzIGluY2x1ZGVkLCB0aGUgbW9kZWwgbWF5IGluc3RlYWQgZmluZCB0aGF0IGhhdmluZyBhc3RobWEgaW5jcmVhc2VzIHRoZSByaXNrIG9mIGRlYXRoLiA8YnIgLz4tIFRoaXMgZXhhbXBsZSBkZW1vbnN0cmF0ZXMgdGhhdCBjYXVzYWwgbW9kZWxzIGFyZSBub3Qgb25seSB1c2VmdWwgdG8gZXZhbHVhdGUgdHJlYXRtZW50cywgYnV0IGNhbiBhbHNvIGhlbHAgdG8gYnVpbGQgcmVsaWFibGUgcHJlZGljdGl2ZSBtb2RlbHMgdGhhdCBkbyBub3QgbWFrZSBoYXJtZnVsIHByZWRpY3Rpb25zIHVzaW5nIHJlbGF0aW9uc2hpcHMgY2F1c2VkIGJ5IHRyZWF0bWVudCBwb2xpY2llcyBpbiB0aGUgdHJhaW5pbmcgZGF0YS4gPGJyIC8+LSBUbyBhY2NvdW50IGZvciB0aGVzZSBjaGFsbGVuZ2VzLCBzdHJvbmcgYXNzdW1wdGlvbnMgbXVzdCBiZSBtYWRlIHRoYXQgY2Fubm90IGJlIHN0YXRpc3RpY2FsbHkgY2hlY2tlZCBvciB2YWxpZGF0ZWQ7IGkuZS4sIGdhdGhlcmluZyBtb3JlIGRhdGEgd2lsbCBub3QgaGVscDE1LiA8YnIgLz4tIFRoZSBzaG9ydGNvbWluZ3Mgb2YgY2xhc3NpY2FsIHN0YXRpc3RpY2FsIGxlYXJuaW5nIHdoZW4gYW5zd2VyaW5nIGNhdXNhbCBxdWVzdGlvbnMgYXJlIGRpc2N1c3NlZCBpbiBncmVhdGVyIGRldGFpbCBpbiBwcmlvciB3b3JrMTYu"><li>In prior work, researchers found that asthmatic patients who were admitted to the hospital for pneumonia were more aggressively treated for the infection, lowering the subpopulation mortality rate. Hence, a model that predicts death from asthma will learn that asthma is protective.</li>
+<li>If, however, an additional variable to account for the level of care is included, the model may instead find that having asthma increases the risk of death.</li>
+</ul>
+
+<b><i>Remarks</i></b>: <ul data-original-markdown="LSBGb3IgaW5zdGFuY2UsIFNpbXBzb27igJlzIHBhcmFkb3ggZGVzY3JpYmVzIHRoZSBvYnNlcnZhdGlvbiB0aGF0IHRoZSByZWxhdGlvbnNoaXAgYmV0d2VlbiB0d28gdmFyaWFibGVzIGNhbiBjaGFuZ2UgZGlyZWN0aW9ucyBpZiBtb3JlIGluZm9ybWF0aW9uIGlzIGluY2x1ZGVkIGluIHRoZSBtb2RlbDEyLiA8YnIgLz4tIFRvIGJldHRlciB1bmRlcnN0YW5kIHRoaXMgaXNzdWUsIGNvbnNpZGVyIHByaW9yIHdvcmsgaW4gd2hpY2ggcmVzZWFyY2hlcnMgZm91bmQgdGhhdCBhc3RobWF0aWMgcGF0aWVudHMgd2hvIHdlcmUgYWRtaXR0ZWQgdG8gdGhlIGhvc3BpdGFsIGZvciBwbmV1bW9uaWEgd2VyZSBtb3JlIGFnZ3Jlc3NpdmVseSB0cmVhdGVkIGZvciB0aGUgaW5mZWN0aW9uLCBsb3dlcmluZyB0aGUgc3VicG9wdWxhdGlvbiBtb3J0YWxpdHkgcmF0ZS4gPGJyIC8+LSBBIG1vZGVsIHRoYXQgcHJlZGljdHMgZGVhdGggZnJvbSBhc3RobWEgd2lsbCBsZWFybiB0aGF0IGFzdGhtYSBpcyBwcm90ZWN0aXZlLiA8YnIgLz4tIElmLCBob3dldmVyLCBhbiBhZGRpdGlvbmFsIHZhcmlhYmxlIHRvIGFjY291bnQgZm9yIHRoZSBsZXZlbCBvZiBjYXJlIGlzIGluY2x1ZGVkLCB0aGUgbW9kZWwgbWF5IGluc3RlYWQgZmluZCB0aGF0IGhhdmluZyBhc3RobWEgaW5jcmVhc2VzIHRoZSByaXNrIG9mIGRlYXRoLiA8YnIgLz4tIFRoaXMgZXhhbXBsZSBkZW1vbnN0cmF0ZXMgdGhhdCBjYXVzYWwgbW9kZWxzIGFyZSBub3Qgb25seSB1c2VmdWwgdG8gZXZhbHVhdGUgdHJlYXRtZW50cywgYnV0IGNhbiBhbHNvIGhlbHAgdG8gYnVpbGQgcmVsaWFibGUgcHJlZGljdGl2ZSBtb2RlbHMgdGhhdCBkbyBub3QgbWFrZSBoYXJtZnVsIHByZWRpY3Rpb25zIHVzaW5nIHJlbGF0aW9uc2hpcHMgY2F1c2VkIGJ5IHRyZWF0bWVudCBwb2xpY2llcyBpbiB0aGUgdHJhaW5pbmcgZGF0YS4gPGJyIC8+LSBUbyBhY2NvdW50IGZvciB0aGVzZSBjaGFsbGVuZ2VzLCBzdHJvbmcgYXNzdW1wdGlvbnMgbXVzdCBiZSBtYWRlIHRoYXQgY2Fubm90IGJlIHN0YXRpc3RpY2FsbHkgY2hlY2tlZCBvciB2YWxpZGF0ZWQ7IGkuZS4sIGdhdGhlcmluZyBtb3JlIGRhdGEgd2lsbCBub3QgaGVscDE1LiA8YnIgLz4tIFRoZSBzaG9ydGNvbWluZ3Mgb2YgY2xhc3NpY2FsIHN0YXRpc3RpY2FsIGxlYXJuaW5nIHdoZW4gYW5zd2VyaW5nIGNhdXNhbCBxdWVzdGlvbnMgYXJlIGRpc2N1c3NlZCBpbiBncmVhdGVyIGRldGFpbCBpbiBwcmlvciB3b3JrMTYu"><li>This example demonstrates that causal models are not only useful to evaluate treatments, but can also help to build reliable predictive models that do not make harmful predictions using relationships caused by treatment policies in the training data.</li><li>To account for these challenges, strong assumptions must be made that cannot be statistically checked or validated; i.e., gathering more data will not help.</li></ul>
+
+</details></p>
+
+<p><details><summary>Q: <p data-original-markdown="RGVzY3JpYmUgdGhlIGNoYWxsZW5nZSBvZiAibGFiZWwgbGVha2FnZSI=">Describe the challenge of "label leakage".</p></summary><b>Answer</b>: <ul data-original-markdown="LSBUaGUgaW5mb3JtYXRpb24gY29sbGVjdGVkIGluIGFuIGluZGl2aWR1YWzigJlzIGhvc3BpdGFsIGVuY291bnRlciBpcyB0aWdodGx5IGNvdXBsZWQgYWNyb3NzIHRpbWUsIGFuZCB0aGlzIGNhbiByZXN1bHQgaW4gaW5mb3JtYXRpb24gYWJvdXQgdGhlIHRhcmdldGVkIHRhc2sgb3V0Y29tZSBsZWFraW5nIGJhY2sgaW50byBmZWF0dXJlcy4gPGJyIC8+LSBXaGlsZSBleHBsb2l0aW5nIHN1Y2ggcmVsYXRpb25zaGlwcyBiZXR3ZWVuIGZlYXR1cmVzIGFuZCB0YXJnZXRzIGlzIGEgZ29hbCBvZiBsZWFybmluZywgaW5mb3JtYXRpb24gbGVha2FnZSBjYW4gcmVuZGVyIGEgcHJlZGljdGlvbiBtZWFuaW5nbGVzcy4=">
+<li>The information collected in an individual’s hospital encounter is tightly coupled across time, and this can result in information about the targeted task outcome leaking back into features. </li>
+<li>While exploiting such relationships between features and targets is a goal of learning, information leakage can render a prediction meaningless.</li>
+</ul>
+
+<b><i>Example</i></b>: <ul data-original-markdown="LSBDb25zaWRlciBwcmVkaWN0aW5nIG1vcnRhbGl0eSBvZiBob3NwaXRhbCBwYXRpZW50cyB1c2luZyBhbGwgYXZhaWxhYmxlIGRhdGEgdXAgdW50aWwgdGhlaXIgdGltZSBvZiBkZWF0aC4gPGJyIC8+LSBTdWNoIGEgdGFzayBjb3VsZCBsZWFkIHRvIGEgcGF0aG9sb2dpY2FsIHByZWRpY3Rpb24gcnVsZeKAlOKAnWlmIHRoZSB2ZW50aWxhdG9yIGlzIHR1cm5lZCBvZmYgaW4gdGhlIHByZWNlZGluZyBob3VyLCBwcmVkaWN0IGRlYXRoLuKAnSA8YnIgLz4tIFRoaXMgY29tbW9ubHkgaGFwcGVucyB3aGVuIHBhdGllbnRzIGFuZCB0aGVpciBmYW1pbGllcyBkZWNpZGUgdG8gd2l0aGRyYXcgY2FyZSBhdCBhIHRlcm1pbmFsIHN0YWdlIG9mIGlsbG5lc3MuIDxiciAvPi0gQSBtYWNoaW5lIGxlYXJuaW5nIGFsZ29yaXRobSB0cmFpbmVkIG5haXZlbHkgb24gdGhpcyBzaWduYWwgd291bGQgaGF2ZSBoaWdoIHByZWRpY3RpdmUgcGVyZm9ybWFuY2UgYnkgbmVhcmx5IGFueSBtZXRyaWMsIHlldCBhYnNvbHV0ZWx5IG5vIGNsaW5pY2FsIHV0aWxpdHkuIDxiciAvPi0gSGlnaCBjYXBhY2l0eSBuZXVyYWwgbW9kZWxzIGV4YW1pbmluZyB0aGUgZW50aXJlIEVIUiBtYXkgYWxzbyBiZSBzdWJqZWN0IHRvIGxhYmVsIGxlYWthZ2U7IGZvciBleGFtcGxlLCBhIGZpbmFsIGRpYWdub3N0aWMgbGFiZWwgY291bGQgbGV2ZXJhZ2UgbGFiZWxzIHRoYXQgYXBwZWFyIHdpdGhpbiBjbGluaWNpYW5z4oCZIGluaXRpYWwgaHlwb3RoZXNlcywgY29uZmlybWluZyBjbGluaWNhbCBjb25zaXN0ZW5jeSBpbiBoeXBvdGhlc2VzLCByYXRoZXIgdGhhbiBwcmVkaWN0aW5nIGEgZGlhZ25vc2lzIGJhc2VkIG9uIHJlbGV2YW50IGRhdGEu">
+<li>Consider predicting mortality of hospital patients using all available data up until their time of death. </li>
+<li>Such a task could lead to a pathological prediction rule—”if the ventilator is turned off in the preceding hour, predict death.” </li>
+<li>This commonly happens when patients and their families decide to withdraw care at a terminal stage of illness. </li>
+<li>A machine learning algorithm trained naively on this signal would have high predictive performance by nearly any metric, yet absolutely no clinical utility.</li>
+</ul>
+
+</details></p>
+
+<p><details><summary>Q: Provide the authors' argument of "Moving from interpretation to justification".</summary><b>Answer</b>: <ul data-original-markdown="LSBJbiBvdGhlciBkb21haW5zLCBtYW55IGZvcm1zIG9mIGludGVycHJldGFiaWxpdHkgcmVseSBvbiBodW1hbiBleHBlcnRpc2UsIGUuZy4sIGEgbW9kZWwgbWF5IGhpZ2hsaWdodCBhIHNpbmdsZSBzZW50ZW5jZSBmcm9tIGEgdXNlciByZXZpZXcgKOKAnFRoZSBjb2ZmZWUgaXMgd29uZGVyZnVsLuKAnSkgYXMgdGhlIHJhdGlvbmFsZSBmb3IgYSByZXZpZXcgcHJlZGljdGlvbi4gPGJyIC8+LSBDbGluaWNpYW5zIGFyZSB1bmxpa2VseSB0byBoYXZlIGEgc2ltaWxhciBjb250ZXh0dWFsIGZyYW1ld29yaywgYW5kIGl0IGlzIHVubGlrZWx5IHRvIGJlIG9idmlvdXMgd2hhdCBhIHBhcnRpY3VsYXIgcGF0dGVybiBvZiBsYWIgbWVhc3VyZW1lbnRzIHRoYXQgbWF4aW1hbGx5IGFjdGl2YXRlcyBhIG1vZGVsIG1lYW5zLCBiaW9sb2dpY2FsbHkgb3IgY2xpbmljYWxseTQ1LiA8YnIgLz4tIFRoZSBhdXRob3JzICBhcmd1ZSB0aGF0IG1vZGVscyBzaG91bGQgaW5zdGVhZCBwcm92aWRlIOKAnGp1c3RpZmlhYmlsaXR54oCdOyBiZXlvbmQgZXhwbGFpbmluZyBhIHNwZWNpZmljIHByZWRpY3Rpb24sIG1vZGVscyBzaG91bGQgc3RyaXZlIHRvd2FyZHMganVzdGlmeWluZyB0aGUgcHJlZGljdGl2ZSBwYXRoIGl0c2VsZi4=">
+<li>In other domains, many forms of interpretability rely on human expertise, e.g., a model may highlight a single sentence from a user review (“The coffee is wonderful.”) as the rationale for a review prediction. </li>
+<li>Clinicians are unlikely to have a similar contextual framework, and it is unlikely to be obvious what a particular pattern of lab measurements that maximally activates a model means, biologically or clinically.</li>
+<li>The authors  argue that models should instead provide “justifiability”; beyond <i>explaining</i> a specific prediction, models should strive towards<i> justifying</i> the predictive path itself.</li>
+</ul>
+
+<b><i>Example</i></b>: <ul data-original-markdown="LSBGb3IgZXhhbXBsZSwgcmVjZW50IHdvcmsgaGFzIHByb3Bvc2VkIHRoYXQgbG9jYWxseS1pbnRlcnByZXRhYmxlIHJlc3VsdHMgY2FuIGJlIHByZXNlbnRlZCBmb3IgZWFjaCBpbmRpdmlkdWFsIHByZWRpY3Rpb24uIDxiciAvPi0gQW5vdGhlciBwb3NzaWJpbGl0eSBpcyBsZWFybmluZyBpbmZsdWVuY2UgZnVuY3Rpb25zIHRvIHRyYWNlIGEgbW9kZWzigJlzIHByZWRpY3Rpb24gdGhyb3VnaCB0aGUgbGVhcm5pbmcgYWxnb3JpdGhtIGFuZCBiYWNrIHRvIGl0cyB0cmFpbmluZyBkYXRhLCB0aGVyZWJ5IGlkZW50aWZ5aW5nIHRyYWluaW5nIHBvaW50cyBtb3N0IHJlc3BvbnNpYmxlIGZvciBhIGdpdmVuIHByZWRpY3Rpb24uIDxiciAvPi0gT3V0c2lkZSBvZiByZWFzc3VyaW5nIGVuZCB1c2VycywganVzdGlmeWluZyBhIG1hY2hpbmUgbGVhcm5pbmcgYWxnb3JpdGht4oCZcyBkZWNpc2lvbiBpcyBhbHNvIGltcG9ydGFudCBmb3Igc2VjdXJpdHkgY29uY2VybnMsIGFzIG1lZGljaW5lIG1heSBiZSB1bmlxdWVseSB2dWxuZXJhYmxlIHRvIOKAnGFkdmVyc2FyaWFsIGF0dGFja3PigJ0u">
+<li>For example, recent work has proposed that locally-interpretable results can be presented for each individual prediction. </li>
+<li>Another possibility is learning influence functions to trace a model’s prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction.</li>
+</ul>
+
+<b><i>Remarks</i></b>: Outside of reassuring end users, justifying a machine learning algorithm’s decision is also important for security concerns, as medicine may be uniquely vulnerable to “adversarial attacks”.<br>
+
+</details></p>
+
+<p><details><summary>Q: Provide some of the examples of ensuring interpretability of machine learning models.</summary><b>Answer</b>: There are many possible ways to interpretability, e.g.,&nbsp;<div><ul><li>through feature space minimization,&nbsp;</li><li>model regularization,&nbsp;</li><li>or a preference for particular classes of models that have well-known post-hoc analysis methods.</li></ul></div>
+
+<b><i>Example</i></b>: <ul data-original-markdown="LSBGb3IgZXhhbXBsZSwgcHJvdmlkaW5nIGEgcG9zdGVyaW9yIGRpc3RyaWJ1dGlvbiBvdmVyIHBvc3NpYmxlIGRlY2lzaW9uIGxpc3RzLiA8YnIgLz4tIFN1Y2ggbGlzdHMgY2FuIHByb3ZpZGUgYSBuYXR1cmFsIHdheSBmb3IgY2xpbmljaWFucyB0byB0aGluayBhYm91dCB0aGUgcmVsYXRpdmUgcmlza3Mgb2YgdGhlaXIgcGF0aWVudOKAmXMgY29uZGl0aW9uLg==">
+<li>For example, providing a posterior distribution over possible decision lists. </li>
+<li>Such lists can provide a natural way for clinicians to think about the relative risks of their patient’s condition.</li>
+</ul>
+
+</details></p>
+
+<p><details><summary>Q: Describe the importance of creating reliable outcomes from heterogeneous source data.</summary><b>Answer</b>: <ul data-original-markdown="LSBNdWx0aXBsZSBkYXRhIHNvdXJjZXMgc2hvdWxkIGJlIGNvbnNpZGVyZWQgd2hlbiBjcmVhdGluZyBsYWJlbHMgYmVjYXVzZSBFSFJzIG9mdGVuIGxhY2sgcHJlY2lzZSBzdHJ1Y3R1cmVkIGxhYmVscy4gPGJyIC8+LSBPciwgaW4gc29tZSBjYXNlcywgc3RydWN0dXJlZCBsYWJlbHMgbWF5IHVucmVsaWFibGUu">
+<li>Multiple data sources should be considered when creating labels because EHRs often lack precise structured labels. </li>
+<li>Or, in some cases, structured labels may be unreliable.</li>
+</ul>
+
+<b><i>Example</i></b>: <ul data-original-markdown="LSBGb3IgZXhhbXBsZSwgYSBkaWFnbm9zdGljIGNsaW5pY2FsIGNvZGUgZm9yIHBuZXVtb25pYSBjb3VsZCBtZWFuIGEgcGF0aWVudCB3YXMgc2NyZWVuZWQgZm9yIHBuZXVtb25pYSByYXRoZXIgdGhhbiB0aGF0IHRoZXkgYWN0dWFsbHkgaGFkIHBuZXVtb25pYS4gPGJyIC8+LSBNYWNoaW5lIGxlYXJuaW5nIG1ldGhvZHMgdG8gcG9vbCBkaWZmZXJlbnQgZGF0YSB0eXBlcyBhbmQgb2J0YWluIGEgbW9yZSByZWxpYWJsZSBsYWJlbCBpcyBrbm93biBhcyBwaGVub3R5cGluZywgYW5kIGlzIGFuIGltcG9ydGFudCBzdWJmaWVsZCBvZiBtYWNoaW5lIGxlYXJuaW5nIGluIGhlYWx0aGNhcmUuIDxiciAvPi0gUmVjZW50IHdvcmsgaGFzIGVtcGhhc2l6ZWQgdGhlIG5lZWQgdG8gaW50ZWdyYXRlIHRoZSByaWNoIGluZm9ybWF0aW9uIGF2YWlsYWJsZSBpbiBjbGluaWNhbCBub3RlcywgYW5kIGJ1aWxkaW5nIG5hdHVyYWwgbGFuZ3VhZ2UgcHJvY2Vzc2luZyBwaXBlbGluZXMgdG8gZXh0cmFjdCBpbmZvcm1hdGlvbiBmcm9tIHVuc3RydWN0dXJlZCBjbGluaWNhbCB0ZXh0IGFjY3VyYXRlbHkgaXMgYW4gYWN0aXZlIHN1YmplY3Qgb2YgcmVzZWFyY2gu">
+<li>For example, a diagnostic clinical code for pneumonia could mean a patient was screened for pneumonia rather than that they actually had pneumonia. </li>
+<li>Machine learning methods to pool different data types and obtain a more reliable label is known as phenotyping, and is an important subfield of machine learning in healthcare.</li>
+</ul>
+
+<b><i>Remarks</i></b>: Recent work has emphasized the need to integrate the rich information available in clinical notes, and building natural language processing pipelines to extract information from unstructured clinical text accurately is an active subject of research.<br>
+
+</details></p>
+
+<p><details><summary>Q: Describe the concept of&nbsp;<i>precision medicine</i> for early individualized treatment.</summary><b>Answer</b>: <ul data-original-markdown="LSBQcmVjaXNpb24gbWVkaWNpbmUgc2Vla3MgdG8gaW5kaXZpZHVhbGl6ZSB0aGUgdHJlYXRtZW50IG9mIGVhY2ggcGF0aWVudDxiciAvPi0gVGhpcyBpcyBwYXJ0aWN1bGFybHkgaW1wb3J0YW50IGZvciBzeW5kcm9tZXPigJRjb25kaXRpb25zIGRlZmluZWQgYnkgYSBjb2xsZWN0aW9uIG9mIHN5bXB0b21zIHdob3NlIGNhdXNlcyBhcmUgdW5rbm93bi4=">
+<li>Precision medicine seeks to individualize the treatment of each patient</li>
+<li>This is particularly important for syndromes—conditions defined by a collection of symptoms whose causes are unknown.</li>
+</ul>
+
+<b><i>Example</i></b>: <ul data-original-markdown="LSBGb3IgaW5zdGFuY2UsIGFjdXRlIGtpZG5leSBpbmp1cnkgKEFLSSkgaXMgZGVmaW5lZCBieSBhIGNvbGxlY3Rpb24gb2Ygc3ltcHRvbXMgY2hhcmFjdGVyaXppbmcga2lkbmV5IGZhaWx1cmUsIG5vdCBhbiB1bmRlcmx5aW5nIGNhdXNlLiA8YnIgLz4tIFR3byBpbmRpdmlkdWFscyBtYXkgaGF2ZSBkZXZlbG9wZWQgQUtJIGZvciBkaWZmZXJlbnQgcmVhc29ucyBiZWNhdXNlIHRoZXJlIGFyZSBtYW55IHJlYXNvbnMgdGhhdCBraWRuZXlzIGNhbiBmYWlsLiA8YnIgLz4tIE1vcmUgbWVhc3VyZW1lbnRzIG9mIHRoZSB0d28gaW5kaXZpZHVhbHMgY291bGQgcmV2ZWFsIHRoZSBkaWZmZXJlbmNlIGluIGNhdXNlLCB3aGljaCBtYXkgaW4gdHVybiBzdWdnZXN0IGFsdGVybmF0aXZlIHRyZWF0bWVudCBzdHJhdGVnaWVzLiA8YnIgLz4tIEJ5IHBlcnNvbmFsaXppbmcgb3ZlciB0aW1lLCBvbmUgY2FuIGxlYXJuIGluZGl2aWR1YWwtc3BlY2lmaWMgdHJlYXRtZW50IGVmZmVjdHMgdGhhdCBhZGRyZXNzIHRoZSBjYXVzZSBvZiB0aGUgc3luZHJvbWUgaW4gYSBwYXJ0aWN1bGFyIGluZGl2aWR1YWwuIDxiciAvPi0gVGhpcyByZWxhdGVzIHRvIHRoZSBpZGVhcyBmcm9tIOKAnE49MeKAnSBjcm9zc292ZXIgc3R1ZGllcyBpbiBleHBlcmltZW50YWwgZGVzaWduLiA8YnIgLz4tIFBlcnNvbmFsaXplZCB0cmVhdG1lbnQgaXMgZW5hYmxlZCBieSBncm93aW5nIHJlcG9zaXRvcmllcyBvZiBsb25naXR1ZGluYWwgZGF0YSwgd2hlcmUgbG9uZy10ZXJtIHByb2dyZXNzaW9ucyBvZiBhbiBpbmRpdmlkdWFs4oCZcyBoZWFsdGggYXJlIGF2YWlsYWJsZQ==">
+<li>For instance, acute kidney injury (AKI) is defined by a collection of symptoms characterizing kidney failure, not an underlying cause. </li>
+<li>Two individuals may have developed AKI for different reasons because there are many reasons that kidneys can fail. </li>
+<li>More measurements of the two individuals could reveal the difference in cause, which may in turn suggest alternative treatment strategies. </li>
+<li>By personalizing over time, one can learn individual-specific treatment effects that address the cause of the syndrome in a particular individual. </li>
+<li>This relates to the ideas from “N=1” crossover studies in experimental design. </li>
+<li>Personalized treatment is enabled by growing repositories of longitudinal data, where long-term progressions of an individual’s health are available.</li>
+</ul>
+
+</details></p>
+
+<p><details><summary>Q: Provide the authors' example (the measuring of lactate levels)&nbsp;of the three missing data mechanisms MCAR, MAR, MNAR .</summary><b>Answer</b>: <p data-original-markdown="Rm9yIGV4YW1wbGUsIGxhYiBtZWFzdXJlbWVudHMgYXJlIHR5cGljYWxseSBvcmRlcmVkIGFzIHBhcnQgb2YgYSBkaWFnbm9zdGljIHdvcmstdXAsIG1lYW5pbmcgdGhhdCB0aGUgcHJlc2VuY2Ugb2YgYSBkYXRhcG9pbnQgY29udmV5cyBpbmZvcm1hdGlvbiBhYm91dCB0aGUgcGF0aWVudOKAmXMgc3RhdGUuIENvbnNpZGVyIGEgaG9zcGl0YWwgd2hlcmUgY2xpbmljYWwgc3RhZmYgbWVhc3VyZXMgcGF0aWVudCBsYWN0YXRlIGxldmVsLiA8YnIgLz4xLiBJZiBhIHBvd2VyIG91dGFnZSBsZWQgdG8gYSBzZXQgb2YgbGFjdGF0ZSBsZXZlbHMgYmVpbmcgbG9zdCwgdGhlIGRhdGEgYXJlIE1DQVIuIDxiciAvPjIuIElmIG51cnNlcyBhcmUgbGVzcyBsaWtlbHkgdG8gbWVhc3VyZSBsYWN0YXRlIGxldmVscyBpbiBwYXRpZW50cyB3aXRoIHRyYXVtYXRpYyBpbmp1cnksIGFuZCB3ZSByZWNvcmQgd2hldGhlciBwYXRpZW50cyB3ZXJlIGFkbWl0dGVkIHdpdGggdHJhdW1hLCB0aGUgZGF0YSBhcmUgTUFSLiA8YnIgLz4zLiBIb3dldmVyLCBpZiBudXJzZXMgYXJlIGxlc3MgbGlrZWx5IHRvIG1lYXN1cmUgbGFjdGF0ZSBsZXZlbHMgd2hlbiBiZWxpZXZlZCB0byBiZSBhbHJlYWR5LCB0aGVuIHRoZSBsYWN0YXRlIG1lYXN1cmVzIHRoZW1zZWx2ZXMgYXJlIE1OQVIsIGFuZCB0aGUgbWVhc3VyZW1lbnQgb2YgdGhlIHNpZ25hbCBpdHNlbGYgaXMgbWVhbmluZ2Z1bC4=">For example, lab measurements are typically ordered as part of a diagnostic work-up, meaning that the presence of a datapoint conveys information about the patient’s state.&nbsp;</p><p data-original-markdown="Rm9yIGV4YW1wbGUsIGxhYiBtZWFzdXJlbWVudHMgYXJlIHR5cGljYWxseSBvcmRlcmVkIGFzIHBhcnQgb2YgYSBkaWFnbm9zdGljIHdvcmstdXAsIG1lYW5pbmcgdGhhdCB0aGUgcHJlc2VuY2Ugb2YgYSBkYXRhcG9pbnQgY29udmV5cyBpbmZvcm1hdGlvbiBhYm91dCB0aGUgcGF0aWVudOKAmXMgc3RhdGUuIENvbnNpZGVyIGEgaG9zcGl0YWwgd2hlcmUgY2xpbmljYWwgc3RhZmYgbWVhc3VyZXMgcGF0aWVudCBsYWN0YXRlIGxldmVsLiA8YnIgLz4xLiBJZiBhIHBvd2VyIG91dGFnZSBsZWQgdG8gYSBzZXQgb2YgbGFjdGF0ZSBsZXZlbHMgYmVpbmcgbG9zdCwgdGhlIGRhdGEgYXJlIE1DQVIuIDxiciAvPjIuIElmIG51cnNlcyBhcmUgbGVzcyBsaWtlbHkgdG8gbWVhc3VyZSBsYWN0YXRlIGxldmVscyBpbiBwYXRpZW50cyB3aXRoIHRyYXVtYXRpYyBpbmp1cnksIGFuZCB3ZSByZWNvcmQgd2hldGhlciBwYXRpZW50cyB3ZXJlIGFkbWl0dGVkIHdpdGggdHJhdW1hLCB0aGUgZGF0YSBhcmUgTUFSLiA8YnIgLz4zLiBIb3dldmVyLCBpZiBudXJzZXMgYXJlIGxlc3MgbGlrZWx5IHRvIG1lYXN1cmUgbGFjdGF0ZSBsZXZlbHMgd2hlbiBiZWxpZXZlZCB0byBiZSBhbHJlYWR5LCB0aGVuIHRoZSBsYWN0YXRlIG1lYXN1cmVzIHRoZW1zZWx2ZXMgYXJlIE1OQVIsIGFuZCB0aGUgbWVhc3VyZW1lbnQgb2YgdGhlIHNpZ25hbCBpdHNlbGYgaXMgbWVhbmluZ2Z1bC4=">Consider a hospital where clinical staff measures patient lactate level.&nbsp;</p><p data-original-markdown="Rm9yIGV4YW1wbGUsIGxhYiBtZWFzdXJlbWVudHMgYXJlIHR5cGljYWxseSBvcmRlcmVkIGFzIHBhcnQgb2YgYSBkaWFnbm9zdGljIHdvcmstdXAsIG1lYW5pbmcgdGhhdCB0aGUgcHJlc2VuY2Ugb2YgYSBkYXRhcG9pbnQgY29udmV5cyBpbmZvcm1hdGlvbiBhYm91dCB0aGUgcGF0aWVudOKAmXMgc3RhdGUuIENvbnNpZGVyIGEgaG9zcGl0YWwgd2hlcmUgY2xpbmljYWwgc3RhZmYgbWVhc3VyZXMgcGF0aWVudCBsYWN0YXRlIGxldmVsLiA8YnIgLz4xLiBJZiBhIHBvd2VyIG91dGFnZSBsZWQgdG8gYSBzZXQgb2YgbGFjdGF0ZSBsZXZlbHMgYmVpbmcgbG9zdCwgdGhlIGRhdGEgYXJlIE1DQVIuIDxiciAvPjIuIElmIG51cnNlcyBhcmUgbGVzcyBsaWtlbHkgdG8gbWVhc3VyZSBsYWN0YXRlIGxldmVscyBpbiBwYXRpZW50cyB3aXRoIHRyYXVtYXRpYyBpbmp1cnksIGFuZCB3ZSByZWNvcmQgd2hldGhlciBwYXRpZW50cyB3ZXJlIGFkbWl0dGVkIHdpdGggdHJhdW1hLCB0aGUgZGF0YSBhcmUgTUFSLiA8YnIgLz4zLiBIb3dldmVyLCBpZiBudXJzZXMgYXJlIGxlc3MgbGlrZWx5IHRvIG1lYXN1cmUgbGFjdGF0ZSBsZXZlbHMgd2hlbiBiZWxpZXZlZCB0byBiZSBhbHJlYWR5LCB0aGVuIHRoZSBsYWN0YXRlIG1lYXN1cmVzIHRoZW1zZWx2ZXMgYXJlIE1OQVIsIGFuZCB0aGUgbWVhc3VyZW1lbnQgb2YgdGhlIHNpZ25hbCBpdHNlbGYgaXMgbWVhbmluZ2Z1bC4="></p><ol><li>If a power outage led to a set of lactate levels being lost, the data are MCAR.&nbsp;</li><li>If nurses are less likely to measure lactate levels in patients with traumatic injury, and we record whether patients were admitted with trauma, the data are MAR.&nbsp;</li><li>However, if nurses are less likely to measure lactate levels when believed to be already, then the lactate measures themselves are MNAR, and the measurement of the signal itself is meaningful.</li></ol><p></p>
+
+<b><i>Remarks</i></b>: The key feature of missing data is that there may be information conveyed by the absence of an observation, and ignoring this dependence may lead to models that make incorrect, and even harmful, predictions.
+
+</details></p>
+
+<p><details><summary>Q: <p data-original-markdown="V2hhdCBhcmUgZWxlY3Ryb25pYyBoZWFsdGggcmVjb3JkcyAoRUhSJ3MpPw==">What is an electronic health record (EHR)?</p></summary><b>Answer</b>: An electronic health record (EHR) is the systematized collection of patient and population health information electronically stored in a digital format.&nbsp;<br>
+
+<b><i>Remarks</i></b>: <ul><li>EHRs may include a range of data, including demographics, medical history, medication and allergies, immunization status, laboratory test results, radiology images, vital signs, personal statistics like age and weight, and billing information.</li><li>Source:&nbsp;<a href="https://en.wikipedia.org/wiki/Electronic_health_record#cite_note-1">https://en.wikipedia.org/wiki/Electronic_health_record#cite_note-1</a></li></ul>
+
+</details></p>
+
+<p><details><summary>Q: Describe the challenge of "External Validity - Shift over sources" (Non-stationarity in learning and deployment)</summary><b>Answer</b>: <ul data-original-markdown="LSBUaGVyZSBpcyBhbHNvIG5vIHJlYXNvbiB0byBiZWxpZXZlIGEgcHJpb3JpIHRoYXQgYSBtb2RlbCBsZWFybmVkIGZyb20gb25lIGhvc3BpdGFsIHdpbGwgZ2VuZXJhbGl6ZSB0byBhIG5ldyBvbmUuIDxiciAvPi0gTWFueSBmYWN0b3JzIGltcGFjdCBnZW5lcmFsaXphYmlsaXR5LCBpbmNsdWRpbmcgbG9jYWwgaG9zcGl0YWwgcHJhY3RpY2VzLCBkaWZmZXJlbnQgcGF0aWVudCBwb3B1bGF0aW9ucywgYXZhaWxhYmxlIGVxdWlwbWVudCwgYW5kIGV2ZW4gdGhlIHNwZWNpZmljIGtpbmQgb2YgRUhSIGVhY2ggdXNlc+KAlHRyYW5zaXRpb25zIGZyb20gb25lIEVIUiB0byBhbm90aGVyIGNyZWF0ZSBub24tb2J2aW91cyBmZWF0dXJlIG1hcHBpbmcgcHJvYmxlbXMuIDxiciAvPi0gVGhpcyBpc3N1ZSB3aWxsIHJlbWFpbiB1bnRpbCBpbmZyYXN0cnVjdHVyZSB0byBlYXNpbHkgdGVzdCBhY3Jvc3MgbXVsdGlwbGUgc2l0ZXMgYmVjb21lcyBwcmV2YWxlbnQuIDxiciAvPi0gVGhlIGFic2VuY2Ugb2Ygc3VjaCBzdGFuZGFyZGl6YXRpb24gY3JlYXRlcyBvcHBvcnR1bml0aWVzIHdpdGggcmVzcGVjdCB0byBkYXRhIG5vcm1hbGl6YXRpb24gYW5kIHRoZSBkZXZlbG9wbWVudCBvZiBtb2RlbHMgdGhhdCBhcmUgcm9idXN0IHRvIGRpZmZlcmVuY2VzIGluIGRhdGEgY29sbGVjdGlvbiBhdCBkaWZmZXJlbnQgc2l0ZXMu">
+<li>There is also no reason to believe a priori that a model learned from one hospital will generalize to a new one. </li>
+<li>Many factors impact generalizability, including local hospital practices, different patient populations, available equipment, and even the specific kind of EHR each uses—transitions from one EHR to another create non-obvious feature mapping problems.</li>
+</ul>
+
+<b><i>Remarks</i></b>: <ul data-original-markdown="LSBUaGVyZSBpcyBhbHNvIG5vIHJlYXNvbiB0byBiZWxpZXZlIGEgcHJpb3JpIHRoYXQgYSBtb2RlbCBsZWFybmVkIGZyb20gb25lIGhvc3BpdGFsIHdpbGwgZ2VuZXJhbGl6ZSB0byBhIG5ldyBvbmUuIDxiciAvPi0gTWFueSBmYWN0b3JzIGltcGFjdCBnZW5lcmFsaXphYmlsaXR5LCBpbmNsdWRpbmcgbG9jYWwgaG9zcGl0YWwgcHJhY3RpY2VzLCBkaWZmZXJlbnQgcGF0aWVudCBwb3B1bGF0aW9ucywgYXZhaWxhYmxlIGVxdWlwbWVudCwgYW5kIGV2ZW4gdGhlIHNwZWNpZmljIGtpbmQgb2YgRUhSIGVhY2ggdXNlc+KAlHRyYW5zaXRpb25zIGZyb20gb25lIEVIUiB0byBhbm90aGVyIGNyZWF0ZSBub24tb2J2aW91cyBmZWF0dXJlIG1hcHBpbmcgcHJvYmxlbXMuIDxiciAvPi0gVGhpcyBpc3N1ZSB3aWxsIHJlbWFpbiB1bnRpbCBpbmZyYXN0cnVjdHVyZSB0byBlYXNpbHkgdGVzdCBhY3Jvc3MgbXVsdGlwbGUgc2l0ZXMgYmVjb21lcyBwcmV2YWxlbnQuIDxiciAvPi0gVGhlIGFic2VuY2Ugb2Ygc3VjaCBzdGFuZGFyZGl6YXRpb24gY3JlYXRlcyBvcHBvcnR1bml0aWVzIHdpdGggcmVzcGVjdCB0byBkYXRhIG5vcm1hbGl6YXRpb24gYW5kIHRoZSBkZXZlbG9wbWVudCBvZiBtb2RlbHMgdGhhdCBhcmUgcm9idXN0IHRvIGRpZmZlcmVuY2VzIGluIGRhdGEgY29sbGVjdGlvbiBhdCBkaWZmZXJlbnQgc2l0ZXMu"><li>This issue will remain until infrastructure to easily test across multiple sites becomes prevalent.</li><li>The absence of such standardization creates opportunities with respect to data normalization and the development of models that are robust to differences in data collection at different sites.</li></ul>
+
+</details></p>
+
+<p><details><summary>Q: Which three widely accepted classifications of missing data mechanisms exist?</summary><b>Answer</b>: <ol data-original-markdown="MS4gVGhlIGZpcnN0LCBtaXNzaW5nIGNvbXBsZXRlbHkgYXQgcmFuZG9tIChNQ0FSKSwgcG9zaXRzIGEgZml4ZWQgcHJvYmFiaWxpdHkgb2YgbWlzc2luZ25lc3MuIEluIHRoaXMgY2FzZSwgZHJvcHBpbmcgaW5jb21wbGV0ZSBvYnNlcnZhdGlvbnPigJRrbm93biBhcyBjb21wbGV0ZSBjYXNlIGFuYWx5c2lz4oCUaXMgY29tbW9ubHkgdXNlZCAoYWxiZWl0IG5haXZlbHkpLCBhbmQgd2lsbCBsZWFkIHRvIHVuYmlhc2VkIHJlc3VsdHMuIDxiciAvPjIuIFNlY29uZCwgdGhlIGRhdGEgbWF5IGJlIG1pc3NpbmcgYXQgcmFuZG9tIChNQVIpLCB3aGVyZSB0aGUgcHJvYmFiaWxpdHkgb2YgbWlzc2luZ25lc3MgaXMgcmFuZG9tIGNvbmRpdGlvbmFsIG9uIHRoZSBvYnNlcnZlZCB2YXJpYWJsZXMuIEluIHRoaXMgY2FzZSwgY29tbW9uIG1ldGhvZHMgaW5jbHVkZSByZS13ZWlnaHRpbmcgZGF0YSB3aXRoIG1ldGhvZHMgbGlrZSBpbnZlcnNlIHByb2JhYmlsaXR5IG9mIGNlbnNvcmluZyB3ZWlnaHRpbmcgb3IgdXNpbmcgbXVsdGlwbGUgaW1wdXRhdGlvbnMgdG8gaW4tZmlsbC4gPGJyIC8+My4gRmluYWxseSwgZGF0YSBtYXkgYmUgbWlzc2luZyBub3QgYXQgcmFuZG9tIChNTkFSKSwgd2hlcmUgdGhlIHByb2JhYmlsaXR5IG9mIG1pc3NpbmduZXNzIGRlcGVuZHMgb24gdGhlIG1pc3NpbmcgdmFyaWFibGUgaXRzZWxmLCBvciBvdGhlciBtaXNzaW5nIGFuZCB1bm9ic2VydmVkIHZhcmlhYmxlcy4=">
+<li>The first,<b> missing completely at random</b> (<b>MCAR</b>), posits a fixed probability of missingness. In this case, dropping incomplete observations—known as complete case analysis—is commonly used (albeit naively), and will lead to unbiased results. </li>
+<li>Second, the data may be <b>missing at random</b> (<b>MAR</b>), where the probability of missingness is random conditional on the observed variables. In this case, common methods include re-weighting data with methods like inverse probability of censoring weighting or using multiple imputations to in-fill. </li>
+<li>Finally, data may be <b>missing not at random</b> (<b>MNAR</b>), where the probability of missingness depends on the missing variable itself, or other missing and unobserved variables.</li>
+</ol>
+
+</details></p>
+
+<p><details><summary>Q: Describe the importance of the integration of fragmented records.</summary><b>Answer</b>: Finite resources can also lead to a lack of communication and coordination, affecting patient care.
+
+<b><i>Example</i></b>: <ul data-original-markdown="LSBGb3IgZXhhbXBsZSwgaXQgY2FuIHRha2UgeWVhcnMgdG8gaWRlbnRpZnkgZG9tZXN0aWMgYWJ1c2Ugc3Vydml2b3JzIGJlY2F1c2UgYW55IHNpbmdsZSBjbGluaWNhbCB2aXNpdCBpbiBpc29sYXRpb24gbWF5IGJlIGNvbnNpc3RlbnQgd2l0aCBvdGhlciBjYXVzZXMgKGUuZy4gYW4gYWRtaXNzaW9uIGZvciBicnVpc2luZyBpcyBjb25zaXN0ZW50IHdpdGggYSBzcG9udGFuZW91cyBmYWxsKS4gPGJyIC8+LSBPbmx5IGEgdGhvcm91Z2ggcmV2aWV3IG9mIGEgcGF0aWVudOKAmXMgcmVjb3JkIHdpbGwgZGVtb25zdHJhdGUgdGhlIHBhdHRlcm4gb2YgcmVwZWF0ZWQgYWRtaXNzaW9ucyBhbmQgb3RoZXIgaW5kaWNhdG9ycyAoZS5nLiwgcGFydG5lcnPigJkgYWxjb2hvbCBhYnVzZSkuIDxiciAvPi0gV2hpbGUgcG9zc2libGUgd2l0aG91dCBzdXBwb3J0IHN5c3RlbXMgaW4gcHJpbmNpcGxlLCBtYWNoaW5lIGxlYXJuaW5nIGNhbiBiZSBhIHBvd2VyZnVsIHRvb2wsIGUuZy4sIGlkZW50aWZ5aW5nIGRvbWVzdGljIGFidXNlIHVwIHRvIDMwIG1vbnRocyBpbiBhZHZhbmNlIG9mIHRoZSBoZWFsdGhjYXJlIHN5c3RlbS4=">
+<li>For example, it can take years to identify domestic abuse survivors because any single clinical visit in isolation may be consistent with other causes (e.g. an admission for bruising is consistent with a spontaneous fall). </li>
+<li>Only a thorough review of a patient’s record will demonstrate the pattern of repeated admissions and other indicators (e.g., partners’ alcohol abuse). </li>
+<li>While possible without support systems in principle, machine learning can be a powerful tool, e.g., identifying domestic abuse up to 30 months in advance of the healthcare system.</li>
+</ul>
+
+</details></p>
+
+<p><details><summary>Q: According to the authors, which three factors should be considered carefully in the design and evaluation of machine learning projects?</summary><b>Answer</b>: <p data-original-markdown="SW4gdGhlIGRlc2lnbiBhbmQgZXZhbHVhdGlvbiBvZiBtYWNoaW5lIGxlYXJuaW5nIHByb2plY3RzOiA8YnIgLz4xLiBDYXVzYWxpdHksIDxiciAvPjIuIE1pc3NpbmduZXNzLCBhbmQgPGJyIC8+My4gT3V0Y29tZSBkZWZpbml0aW9uLg=="><ol><li>&nbsp;Causality,&nbsp;</li><li>&nbsp;Missingness, and&nbsp;</li><li>&nbsp;Outcome definition.</li></ol></p>
+
+</details></p>
+                
+              
+              
+                
+
+
+  <h2 id="__comments">Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>var disqus_config=function(){this.page.url="https://pwenker.com/ai_and_health/knowledge/a_review_of_challenges_and_opportunities_in_machine_learning_for_health.html",this.page.identifier="knowledge/a_review_of_challenges_and_opportunities_in_machine_learning_for_health.html"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//www-pwenker-com.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="index.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              README - Knowledge Folder
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="ai_in_healthcare_specialization_-_introduction_to_healthcare.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              AI in Healthcare Specialization - Introduction to Healthcare
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://www.github.com/pwenker" target="_blank" rel="noopener" title="www.github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://www.twitter.com/PascalWenker" target="_blank" rel="noopener" title="www.twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://www.linkedin.com/in/pascal-wenker/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://www.youtube.com/channel/UCYxDcdFLW-AMoHEfh7pG-oA" target="_blank" rel="noopener" title="www.youtube.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      
+    
+  </body>
+</html>
